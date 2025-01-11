@@ -1,0 +1,77 @@
+/* Reset some default browser styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Basic body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Container for the to-do list */
+.todo-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+/* Input and button styling */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #5c6bc0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3f4e93;
+}
+
+/* Styling for the task list */
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.delete-btn:hover {
+    background-color: darkred;
+}
